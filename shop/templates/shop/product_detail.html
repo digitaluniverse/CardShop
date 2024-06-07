@@ -1,0 +1,19 @@
+<!-- shop/templates/shop/product_detail.html -->
+{% extends 'shop/base.html' %}
+
+{% block title %}{{ product.name }}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6">
+        <img src="{{ product.image.url }}" class="img-fluid" alt="{{ product.name }}">
+    </div>
+    <div class="col-md-6">
+        <h1>{{ product.name }}</h1>
+        <p>{{ product.description }}</p>
+        <p><strong>Price: ${{ product.price }}</strong></p>
+        <a href="{% url 'add_to_cart' product.id %}" class="btn btn-success">Add to Cart</a>
+        <a href="{% url 'cart_detail' %}" class="btn btn-secondary">View Cart</a>
+    </div>
+</div>
+{% endblock %}

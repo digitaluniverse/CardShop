@@ -1,0 +1,39 @@
+[
+    {
+      "model": "shop.product",
+      "pk": 1,
+      "fields": {
+        "name": "Pokémon Card - Pikachu",
+        "description": "A rare Pikachu card.",
+        "price": "9.99",
+        "image": "products/pikachu.jpg",
+        "stock": 10,
+        "available": true
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": 2,
+      "fields": {
+        "name": "Pokémon Card - Charizard",
+        "description": "A rare Charizard card.",
+        "price": "19.99",
+        "image": "products/charizard.jpg",
+        "stock": 5,
+        "available": true
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": 3,
+      "fields": {
+        "name": "Pokémon Card - Venusaur",
+        "description": "A rare Venusaur card.",
+        "price": "49.99",
+        "image": "products/venusaur.jpg",
+        "stock": 20,
+        "available": true
+      }
+    }
+  ]
+  

@@ -1,0 +1,13 @@
+<!-- shop/templates/shop/payment_success.html -->
+{% extends 'shop/base.html' %}
+
+{% block title %}Payment Success{% endblock %}
+
+{% block content %}
+<div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Payment Successful!</h4>
+    <p>Thank you for your purchase!</p>
+    <hr>
+    <a href="{% url 'product_list' %}" class="btn btn-primary">Continue Shopping</a>
+</div>
+{% endblock %}
